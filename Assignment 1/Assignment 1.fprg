@@ -1,1 +1,39 @@
-
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-14 03:06:54 PM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0xNDswMjoxOTo1NSBQTTszNzM1"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0xNDswMzowNjo1NCBQTTszOzM4NDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;This is an example of my favorite sandwich.&quot;" newline="True"/>
+            <output expression="&quot;Make sure you have the ingredients that you need to make your favorite sandwich.&quot;" newline="True"/>
+            <output expression="&quot;Grab a plate.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Grab the package of bread.&quot;" newline="True"/>
+            <output expression="&quot;Grab one slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Grab another slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Plug in toaster.&quot;" newline="True"/>
+            <output expression="&quot;Put one slice of bread in the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Put the other slice of bread in the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Toast the bread.&quot;" newline="True"/>
+            <output expression="&quot;Wait.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Take out the sour cream.&quot;" newline="True"/>
+            <output expression="&quot;Take out one slice of toast out of the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Take out the other slice of toast.&quot;" newline="True"/>
+            <output expression="&quot;Turn off the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Grab the knife&quot;" newline="True"/>
+            <output expression="&quot;Spread the sour cream on one slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Fold the slice of toast with sour cream.&quot;" newline="True"/>
+            <output expression="&quot;Spread the sour cream on the other slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Fold that slice toast.&quot;" newline="True"/>
+            <output expression="&quot;Enjoy the sandwiches!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
