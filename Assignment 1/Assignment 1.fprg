@@ -28,7 +28,7 @@
             <output expression="&quot;Take out one slice of toast out of the toaster.&quot;" newline="True"/>
             <output expression="&quot;Take out the other slice of toast.&quot;" newline="True"/>
             <output expression="&quot;Turn off the toaster.&quot;" newline="True"/>
-            <output expression="&quot;Grab the knife&quot;" newline="True"/>
+            <output expression="&quot;Grab the knife.&quot;" newline="True"/>
             <output expression="&quot;Spread the sour cream on one slice of bread.&quot;" newline="True"/>
             <output expression="&quot;Fold the slice of toast with sour cream.&quot;" newline="True"/>
             <output expression="&quot;Spread the sour cream on the other slice of bread.&quot;" newline="True"/>
