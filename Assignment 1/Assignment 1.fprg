@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="mariogomez"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-01-14 03:06:54 PM"/>
+        <attribute name="saved" value="2020-01-15 01:59:50 AM"/>
         <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0xNDswMjoxOTo1NSBQTTszNzM1"/>
-        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0xNDswMzowNjo1NCBQTTszOzM4NDE="/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0xNTswMTo1OTo1MCBBTTsxMzszODc4"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -14,25 +14,58 @@
             <output expression="&quot;This is an example of my favorite sandwich.&quot;" newline="True"/>
             <output expression="&quot;Make sure you have the ingredients that you need to make your favorite sandwich.&quot;" newline="True"/>
             <output expression="&quot;Grab a plate.&quot;" newline="True"/>
+            <output expression="&quot;Put it on the counter.&quot;" newline="True"/>
             <output expression="&quot;Walk to the fridge.&quot;" newline="True"/>
             <output expression="&quot;Grab the package of bread.&quot;" newline="True"/>
-            <output expression="&quot;Grab one slice of bread.&quot;" newline="True"/>
-            <output expression="&quot;Grab another slice of bread.&quot;" newline="True"/>
-            <output expression="&quot;Plug in toaster.&quot;" newline="True"/>
+            <output expression="&quot;Walk back to the counter.&quot;" newline="True"/>
+            <output expression="&quot;Put the packaged bread on the counter.&quot;" newline="True"/>
+            <output expression="&quot;Open the package of bread.&quot;" newline="True"/>
+            <output expression="&quot;Take one slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Put it on the plate.&quot;" newline="True"/>
+            <output expression="&quot;Take out another slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Put the second slice of bread on the plate.&quot;" newline="True"/>
+            <output expression="&quot;Plug in the toaster.&quot;" newline="True"/>
             <output expression="&quot;Put one slice of bread in the toaster.&quot;" newline="True"/>
             <output expression="&quot;Put the other slice of bread in the toaster.&quot;" newline="True"/>
             <output expression="&quot;Toast the bread.&quot;" newline="True"/>
             <output expression="&quot;Wait.&quot;" newline="True"/>
             <output expression="&quot;Walk to the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Open the fridge.&quot;" newline="True"/>
             <output expression="&quot;Take out the sour cream.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the counter.&quot;" newline="True"/>
+            <output expression="&quot;Put the sour cream on the counter.&quot;" newline="True"/>
+            <output expression="&quot;Walk back to the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Close the fridge door.&quot;" newline="True"/>
+            <output expression="&quot;Walk back to the counter.&quot;" newline="True"/>
             <output expression="&quot;Take out one slice of toast out of the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Put it on the plate.&quot;" newline="True"/>
             <output expression="&quot;Take out the other slice of toast.&quot;" newline="True"/>
-            <output expression="&quot;Turn off the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Put it on the plate as well.&quot;" newline="True"/>
+            <output expression="&quot;Unplug the toaster.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the sink.&quot;" newline="True"/>
             <output expression="&quot;Grab the knife.&quot;" newline="True"/>
+            <output expression="&quot;Walk back to the counter.&quot;" newline="True"/>
+            <output expression="&quot;Grab one slice of toast.&quot;" newline="True"/>
             <output expression="&quot;Spread the sour cream on one slice of bread.&quot;" newline="True"/>
+            <output expression="&quot;Put the knife on the plate.&quot;" newline="True"/>
             <output expression="&quot;Fold the slice of toast with sour cream.&quot;" newline="True"/>
-            <output expression="&quot;Spread the sour cream on the other slice of bread.&quot;" newline="True"/>
-            <output expression="&quot;Fold that slice toast.&quot;" newline="True"/>
+            <output expression="&quot;Put the folded sandwich on the plate.&quot;" newline="True"/>
+            <output expression="&quot;Pick up the knife once again.&quot;" newline="True"/>
+            <output expression="&quot;Spread the sour cream on the other slice of toast.&quot;" newline="True"/>
+            <output expression="&quot;Put the knife on the plate.&quot;" newline="True"/>
+            <output expression="&quot;Fold the second slice toast.&quot;" newline="True"/>
+            <output expression="&quot;Put it on the plate.&quot;" newline="True"/>
+            <output expression="&quot;Pick up the knife.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the sink.&quot;" newline="True"/>
+            <output expression="&quot;Put the knife in the sink.&quot;" newline="True"/>
+            <output expression="&quot;Wash your hands.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the counter.&quot;" newline="True"/>
+            <output expression="&quot;Grab the sour cream.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Open the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Put away the sour cream.&quot;" newline="True"/>
+            <output expression="&quot;Close the fridge.&quot;" newline="True"/>
+            <output expression="&quot;Walk to the counter.&quot;" newline="True"/>
             <output expression="&quot;Enjoy the sandwiches!&quot;" newline="True"/>
         </body>
     </function>
