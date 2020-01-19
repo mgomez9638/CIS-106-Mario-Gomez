@@ -1,1 +1,1 @@
-Display "Hello world!"
+Display "Hello Mario!"
