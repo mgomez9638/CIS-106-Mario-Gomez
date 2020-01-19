@@ -6,3 +6,4 @@ My name is Mario Gomez. I am taking this course to further my knowledge of progr
 
 ## Assignment 2
 
+The second week of CIS 106 was review to me. The coding is currently simple and interchangable. It reminded me of coding with Swift on Xcode. The source code management helps to keep track of the files, and it is easily accesible. The IDEs that I decided to test on were Xcode, Repl.it, and Thonny. I intend to apply this into my future projects. Github will help me go back to old programs, if I need a refresher. 
