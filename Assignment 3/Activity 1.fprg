@@ -1,1 +1,32 @@
-
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-20 01:17:22 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMTowNDo1MSBBTTszNzA2"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMToxNzoyMiBBTTsxOzM4MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <input variable="hours"/>
+            <declare name="rate" type="Integer" array="False" size=""/>
+            <input variable="rate"/>
+            <declare name="weekly" type="Integer" array="False" size=""/>
+            <assign variable="weekly" expression="rate * hours"/>
+            <declare name="annually" type="Integer" array="False" size=""/>
+            <assign variable="annually" expression="52 * weekly"/>
+            <declare name="monthly" type="Integer" array="False" size=""/>
+            <assign variable="monthly" expression="annually / 12"/>
+            <output expression="&quot;Your weekly earnings are $ &quot;" newline="True"/>
+            <output expression="weekly" newline="True"/>
+            <output expression="&quot;Your monthly earnings are $ &quot;" newline="True"/>
+            <output expression="monthly" newline="True"/>
+            <output expression="&quot;Your annual earnings are $ &quot;" newline="True"/>
+            <output expression="annually" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
