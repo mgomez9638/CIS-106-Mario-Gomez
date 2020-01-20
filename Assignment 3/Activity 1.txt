@@ -1,1 +1,21 @@
+Declare Integer hours
 
+Input hours
+Declare Integer rate
+
+Input rate
+Declare Integer weekly
+
+Set weekly = rate * hours
+Declare Integer annually
+
+Set annually = 52 * weekly
+Declare Integer monthly
+
+Set monthly = annually / 12
+Display "Your weekly earnings are $ "
+Display weekly
+Display "Your monthly earnings are $ "
+Display monthly
+Display "Your annual earnings are $ "
+Display annually
