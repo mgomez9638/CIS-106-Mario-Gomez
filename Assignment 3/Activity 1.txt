@@ -1,21 +1,25 @@
-Declare Integer hours
-
-Input hours
-Declare Integer rate
-
-Input rate
-Declare Integer weekly
-
-Set weekly = rate * hours
-Declare Integer annually
-
-Set annually = 52 * weekly
-Declare Integer monthly
-
-Set monthly = annually / 12
-Display "Your weekly earnings are $ "
-Display weekly
-Display "Your monthly earnings are $ "
-Display monthly
-Display "Your annual earnings are $ "
-Display annually
+Function Main
+    Declare Integer hours
+    
+    Output "Enter hours worked: "
+    Input hours
+    Declare Integer rate
+    
+    Output "Enter hourly rate: "
+    Input rate
+    Declare Integer weekly
+    
+    Assign weekly = rate * hours
+    Declare Integer annually
+    
+    Assign annually = 52 * weekly
+    Declare Integer monthly
+    
+    Assign monthly = annually / 12
+    Output "Your weekly earnings are $ "
+    Output weekly
+    Output "Your monthly earnings are $ "
+    Output monthly
+    Output "Your annual earnings are $ "
+    Output annually
+End
