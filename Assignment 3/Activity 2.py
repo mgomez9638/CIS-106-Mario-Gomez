@@ -20,7 +20,7 @@ print("hours old,")
 print(minutes)
 print("minutes old,")
 print(seconds)
-print("seconds old")
+print("seconds old.")
 
 #Activity 2 on Repl.it
 #The code layout is different, but it works the same way.
@@ -30,4 +30,4 @@ days = 365 * age
 hours = 8760 * age
 minutes = 525600 * age
 seconds = 31536000 * age
-print("You are", age, "years old,", months, "months old,", days, "days old,", hours, "hours old,", minutes, "minutes old,", seconds, "seconds old" )
+print("You are", age, "years old,", months, "months old,", days, "days old,", hours, "hours old,", minutes, "minutes old,", seconds, "seconds old." )
