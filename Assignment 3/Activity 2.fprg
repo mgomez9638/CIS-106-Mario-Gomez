@@ -1,1 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-20 02:03:57 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMTo1MjowNyBBTTszNzEw"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMjowMzo1NyBBTTsxOzM4MjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your age(in years): &quot;" newline="True"/>
+            <input variable="age"/>
+            <declare name="months" type="Integer" array="False" size=""/>
+            <assign variable="months" expression="12 * age"/>
+            <declare name="days" type="Integer" array="False" size=""/>
+            <assign variable="days" expression="365 * age"/>
+            <declare name="hours" type="Integer" array="False" size=""/>
+            <assign variable="hours" expression="8760 * age"/>
+            <declare name="minutes" type="Integer" array="False" size=""/>
+            <assign variable="minutes" expression="525600 * age"/>
+            <declare name="seconds" type="Integer" array="False" size=""/>
+            <assign variable="seconds" expression="31536000 * age"/>
+            <output expression="&quot;You are&quot;" newline="True"/>
+            <output expression="age" newline="True"/>
+            <output expression="&quot;years old,&quot;" newline="True"/>
+            <output expression="months" newline="True"/>
+            <output expression="&quot;months old,&quot;" newline="True"/>
+            <output expression="days" newline="True"/>
+            <output expression="&quot;days old,&quot;" newline="True"/>
+            <output expression="hours" newline="True"/>
+            <output expression="&quot;hours old,&quot;" newline="True"/>
+            <output expression="minutes" newline="True"/>
+            <output expression="&quot;minutes old,&quot;" newline="True"/>
+            <output expression="seconds" newline="True"/>
+            <output expression="&quot;seconds old&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
 
