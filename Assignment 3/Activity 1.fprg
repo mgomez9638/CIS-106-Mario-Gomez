@@ -4,16 +4,18 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="mariogomez"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-01-20 01:17:22 AM"/>
+        <attribute name="saved" value="2020-01-20 01:45:12 AM"/>
         <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMTowNDo1MSBBTTszNzA2"/>
-        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMToxNzoyMiBBTTsxOzM4MTY="/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMDswMTo0NToxMiBBTTszOzM4MTg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="hours" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter hours worked: &quot;" newline="True"/>
             <input variable="hours"/>
             <declare name="rate" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter hourly rate: &quot;" newline="True"/>
             <input variable="rate"/>
             <declare name="weekly" type="Integer" array="False" size=""/>
             <assign variable="weekly" expression="rate * hours"/>
