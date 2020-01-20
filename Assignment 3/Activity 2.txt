@@ -30,6 +30,6 @@ Function Main
     Output minutes
     Output "minutes old,"
     Output seconds
-    Output "seconds old"
+    Output "seconds old."
 End
 
