@@ -36,7 +36,7 @@
             <output expression="minutes" newline="True"/>
             <output expression="&quot;minutes old,&quot;" newline="True"/>
             <output expression="seconds" newline="True"/>
-            <output expression="&quot;seconds old&quot;" newline="True"/>
+            <output expression="&quot;seconds old.&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
