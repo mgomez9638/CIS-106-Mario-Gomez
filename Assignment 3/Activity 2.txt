@@ -1,35 +1,12 @@
 Function Main
-    Declare Integer age
+    Declare Integer age, months, days, hours, minutes, seconds
     
     Output "Enter your age(in years): "
     Input age
-    Declare Integer months
-    
     Assign months = 12 * age
-    Declare Integer days
-    
     Assign days = 365 * age
-    Declare Integer hours
-    
     Assign hours = 8760 * age
-    Declare Integer minutes
-    
     Assign minutes = 525600 * age
-    Declare Integer seconds
-    
     Assign seconds = 31536000 * age
-    Output "You are"
-    Output age
-    Output "years old,"
-    Output months
-    Output "months old,"
-    Output days
-    Output "days old,"
-    Output hours
-    Output "hours old,"
-    Output minutes
-    Output "minutes old,"
-    Output seconds
-    Output "seconds old."
+    Output "You are "&age&"years old, "&months&" months old, "&days&" days old, "&hours&" hours old, "&minutes&"minutes old, "&seconds&" seconds old."
 End
-
