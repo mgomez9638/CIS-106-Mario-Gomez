@@ -19,7 +19,7 @@
             <assign variable="weekly" expression="rate * hours"/>
             <assign variable="annually" expression="52 * weekly"/>
             <assign variable="monthly" expression="annually / 12"/>
-            <output expression="&quot;Your weekly earnings are $ &quot;&amp;weekly&amp;&quot;.Your monthly earnings are $ &quot;&amp;monthly&amp;&quot;.Your annually earnings are $ &quot;&amp;annually&amp;&quot;.&quot;" newline="False"/>
+            <output expression="&quot;Your weekly earnings are $&quot;&amp;weekly&amp;&quot;.Your monthly earnings are $&quot;&amp;monthly&amp;&quot;.Your annually earnings are $&quot;&amp;annually&amp;&quot;.&quot;" newline="False"/>
         </body>
     </function>
 </flowgorithm>
