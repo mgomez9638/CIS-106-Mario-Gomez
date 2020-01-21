@@ -8,5 +8,5 @@ Function Main
     Assign weekly = rate * hours
     Assign annually = 52 * weekly
     Assign monthly = annually / 12
-    Output "Your weekly earnings are $ "&weekly&".Your monthly earnings are $ "&monthly&".Your annually earnings are $ "&annually&"."
+    Output "Your weekly earnings are $"&weekly&".Your monthly earnings are $"&monthly&".Your annually earnings are $"&annually&"."
 End
