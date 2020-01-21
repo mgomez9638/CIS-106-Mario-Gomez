@@ -1,25 +1,12 @@
 Function Main
-    Declare Integer hours
+    Declare Real hours, rate, weekly, monthly, annually
     
     Output "Enter hours worked: "
     Input hours
-    Declare Integer rate
-    
     Output "Enter hourly rate: "
     Input rate
-    Declare Integer weekly
-    
     Assign weekly = rate * hours
-    Declare Integer annually
-    
     Assign annually = 52 * weekly
-    Declare Integer monthly
-    
     Assign monthly = annually / 12
-    Output "Your weekly earnings are $ "
-    Output weekly
-    Output "Your monthly earnings are $ "
-    Output monthly
-    Output "Your annual earnings are $ "
-    Output annually
+    Output "Your weekly earnings are $ "&weekly&".Your monthly earnings are $ "&monthly&".Your annually earnings are $ "&annually&"."
 End
