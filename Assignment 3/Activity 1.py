@@ -7,4 +7,4 @@ rate = float(input())
 weekly = rate * hours
 annually = 52 * weekly
 monthly = annually / 12
-print("Your weekly earnings are $ " + str(weekly) + ".Your monthly earnings are $ " + str(monthly) + ".Your annually earnings are $ " + str(annually) + ".", end='', flush=True)
+print("Your weekly earnings are $" + str(weekly) + ".Your monthly earnings are $" + str(monthly) + ".Your annually earnings are $" + str(annually) + ".", end='', flush=True)
