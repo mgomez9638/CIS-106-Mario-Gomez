@@ -1,3 +1,5 @@
+#Activty 2 on Flowgorithm
+#This activity gives the user access to figure out how old they are by year, month, day, hour, minute, and second.
 print("Enter your age(in years): ")
 age = int(input())
 months = 12 * age
