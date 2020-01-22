@@ -21,5 +21,4 @@ print("The area of the triangle is " + str(area_triangle) +
       ". The area of rectangle is " + str(area_rectangle) + 
       ". The area of parallelogram is " + str(area_parallelogram) + 
       ". The area of a trapezoid is " + str(area_trapezoid) + 
-      ". The area of a circle is " + str(area_circle) + 
-      ".")
+      ". The area of a circle is " + str(area_circle) + ".")
