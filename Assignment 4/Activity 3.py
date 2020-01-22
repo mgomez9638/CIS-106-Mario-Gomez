@@ -11,4 +11,4 @@ inches = 63360 * miles
 
 print("The distance in yards is " + str(yards) + 
     ". The distance in feet is " + str(feet) + 
-    ". The distance in inches" + str(inches) + ".")
+    ". The distance in inches is " + str(inches) + ".")
