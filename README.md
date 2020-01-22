@@ -14,6 +14,6 @@ In session 3 of CIS 106 was figuring out how to code properly with Flowgorithm. 
 
 ## Assignment 4
 
-In session 4 of CIS 106, it was learning about the basic operations of coding. It is always a good idea to refresh on similar material. We all forget certain information sometimes. I have seen that there are some restrictions on what you can and cannot do. I intend to apply this in my learning by going back and referring to discussions. I will keep it concise as well as use research material before entering the activity. There is no better way to educate yourself, then by hands-on activities.
+In session 4 of CIS 106, it was learning about the basic operations of coding. It is always a good idea to refresh on similar material. We all forget certain information sometimes. I have seen that there are some restrictions on what you can and cannot do. I intend to apply this in my learning by going back and referring to discussions. I will keep it concise as well as use research material before entering the activity. There is no better way to improve, then through hands-on activities.
 
 ## Assignment 5
