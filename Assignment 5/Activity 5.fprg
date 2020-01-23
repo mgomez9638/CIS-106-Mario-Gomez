@@ -1,1 +1,24 @@
-
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-23 01:21:00 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMjsxMDowOTo0NiBBTTszNzE3"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMzswMToyMTowMCBBTTsyOzM4MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, height, roomAreaInFeet, roomAreaInYards" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the base(in feet): &quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;Enter the height(in feet): &quot;" newline="True"/>
+            <input variable="height"/>
+            <assign variable="roomAreaInFeet" expression="base * height"/>
+            <assign variable="roomAreaInYards" expression="roomAreaInfeet / 3"/>
+            <output expression="&quot;The amount of floor required is &quot;&amp;roomAreaInYards&amp;&quot; sq. yds.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
