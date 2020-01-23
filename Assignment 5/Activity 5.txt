@@ -1,1 +1,11 @@
-
+Function Main
+    Declare Real base, height, roomAreaInFeet, roomAreaInYards
+    
+    Output "Enter the base(in feet): "
+    Input base
+    Output "Enter the height(in feet): "
+    Input height
+    Assign roomAreaInFeet = base * height
+    Assign roomAreaInYards = roomAreaInfeet / 3
+    Output "The amount of floor required is "&roomAreaInYards&" sq. yds."
+End
