@@ -1,11 +1,39 @@
 Function Main
     Declare Real base, height, roomAreaInFeet, roomAreaInYards
     
+    Assign base = getBase()
+    Assign height = getHeight()
+    Assign roomAreaInFeet = calculateRoomAreaInFeet(base, height)
+    Assign roomAreaInYards = calculateRoomAreaInYards(roomAreaInFeet)
+    Call displayResult(roomAreaInFeet, roomAreaInYards)
+End
+
+Function calculateRoomAreaInFeet (Real base, Real height)
+    Declare Real roomAreaInFeet
+    
+    Assign roomAreaInFeet = base * height
+Return Real roomAreaInFeet
+
+Function calculateRoomAreaInYards (Real roomAreaInFeet)
+    Declare Real roomAreaInYards
+    
+    Assign roomAreaInYards = roomAreaInFeet / 3
+Return Real roomAreaInYards
+
+Function displayResult (Real roomAreaInFeet, Real roomAreaInYards)
+    Output "The amount of floor required is "&roomAreaInYards&" square yards."
+End
+
+Function getBase
+    Declare Real base
+    
     Output "Enter the base(in feet): "
     Input base
+Return Real base
+
+Function getHeight
+    Declare Real height
+    
     Output "Enter the height(in feet): "
     Input height
-    Assign roomAreaInFeet = base * height
-    Assign roomAreaInYards = roomAreaInfeet / 3
-    Output "The amount of floor required is "&roomAreaInYards&" sq. yds."
-End
+Return Real height
