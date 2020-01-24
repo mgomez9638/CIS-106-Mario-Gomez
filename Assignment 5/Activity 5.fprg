@@ -4,21 +4,63 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="mariogomez"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-01-23 01:21:00 AM"/>
-        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMjsxMDowOTo0NiBBTTszNzE3"/>
-        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yMzswMToyMTowMCBBTTsyOzM4MTE="/>
+        <attribute name="saved" value="2020-01-24 01:47:46 PM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yNDsxMjowNToyNCBQTTszNzI4"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMS0yNDswMTo0Nzo0NiBQTTs2OzM4NDk="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="base, height, roomAreaInFeet, roomAreaInYards" type="Real" array="False" size=""/>
+            <assign variable="base" expression="getBase()"/>
+            <assign variable="height" expression="getHeight()"/>
+            <assign variable="roomAreaInFeet" expression="calculateRoomAreaInFeet(base, height)"/>
+            <assign variable="roomAreaInYards" expression="calculateRoomAreaInYards(roomAreaInFeet)"/>
+            <call expression="displayResult(roomAreaInFeet, roomAreaInYards)"/>
+        </body>
+    </function>
+    <function name="calculateRoomAreaInFeet" type="Real" variable="roomAreaInFeet">
+        <parameters>
+            <parameter name="base" type="Real" array="False"/>
+            <parameter name="height" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="roomAreaInFeet" type="Real" array="False" size=""/>
+            <assign variable="roomAreaInFeet" expression="base * height"/>
+        </body>
+    </function>
+    <function name="calculateRoomAreaInYards" type="Real" variable="roomAreaInYards">
+        <parameters>
+            <parameter name="roomAreaInFeet" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="roomAreaInYards" type="Real" array="False" size=""/>
+            <assign variable="roomAreaInYards" expression="roomAreaInFeet / 3"/>
+        </body>
+    </function>
+    <function name="displayResult" type="None" variable="">
+        <parameters>
+            <parameter name="roomAreaInFeet" type="Real" array="False"/>
+            <parameter name="roomAreaInYards" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <output expression="&quot;The amount of floor required is &quot;&amp;roomAreaInYards&amp;&quot; square yards.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="getBase" type="Real" variable="base">
+        <parameters/>
+        <body>
+            <declare name="base" type="Real" array="False" size=""/>
             <output expression="&quot;Enter the base(in feet): &quot;" newline="True"/>
             <input variable="base"/>
+        </body>
+    </function>
+    <function name="getHeight" type="Real" variable="height">
+        <parameters/>
+        <body>
+            <declare name="height" type="Real" array="False" size=""/>
             <output expression="&quot;Enter the height(in feet): &quot;" newline="True"/>
             <input variable="height"/>
-            <assign variable="roomAreaInFeet" expression="base * height"/>
-            <assign variable="roomAreaInYards" expression="roomAreaInfeet / 3"/>
-            <output expression="&quot;The amount of floor required is &quot;&amp;roomAreaInYards&amp;&quot; sq. yds.&quot;" newline="True"/>
         </body>
     </function>
 </flowgorithm>
