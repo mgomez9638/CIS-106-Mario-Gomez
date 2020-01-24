@@ -18,6 +18,6 @@ In session 4 of CIS 106, it was learning about the basic operations of coding. I
 
 ## Assignment 5
 
-In session 5 of CIS 106, we go further into coding by learning about functions. It focuses on specifying the task and how functions control how the program runs. It, also, mentions about the program layout. This will help me out when creating programs in the IDE. This emphasizes each part of the program. There is always new things to learn and reasons why. I thought a programmer's main goal was to keep it as small as possible, but it is crucial to emphasize each part if you want to refer back to it.
+In session 5 of CIS 106, we go further into coding by learning about functions. It focuses on specifying the task and how functions control how the program runs. It, also, mentions about the program layout. This will help me out when creating programs in the IDE. This emphasizes each part of the program. There is always new things to learn and reasons why. I thought a programmer's main goal was to keep it as small as possible, but it is not. Programming is not a competition of how small someone could make it. The separation between lines and functions is about being able to read the code. It is crucial to emphasize each part if you want to refer back to it. The code layout makes it accesible and easier to maintain when it comes to lengthier programs. When you start to do it with small programs, it becomes a habit with bigger programs. 
 
 ## Assignment 6
