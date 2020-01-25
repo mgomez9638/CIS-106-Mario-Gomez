@@ -1,5 +1,7 @@
 # Activity 1
-#This program helps the user figure out how much they make weekly, monthly, and annually before taxes.
+# This program helps the user figure out how much money they make.
+# The end results include weekly, monthly, and annually before taxes.
+
 
 def get_hours():
         hours = float(input("Enter hours worked: "))
@@ -27,7 +29,10 @@ def calculate_monthly_rate(annually):
 
 
 def display_result(weekly_rate, monthly_rate, annually_rate):
-        print("Your weekly_rate earnings are $", weekly_rate, ". Your monthly earnings are $", monthly_rate, ". Your annual earnings are $", annually_rate, ".")
+        print("Your weekly_rate earnings are $", weekly_rate, 
+              ". Your monthly earnings are $", monthly_rate, 
+              ". Your annual earnings are $", annually_rate, 
+              ".")
 
 
 def main():
