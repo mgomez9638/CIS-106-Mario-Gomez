@@ -1,3 +1,6 @@
+# Activity 5
+# The user determines their sock size by their shoe size. 
+
 def calculatesockSize(shoeSize):
     sockSize = int(shoeSize + 0.5)
     
