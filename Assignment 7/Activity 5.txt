@@ -1,0 +1,36 @@
+Function Main
+    Declare Real shoeSize, sockSize
+    
+    Assign shoeSize = getShoeSize()
+    Assign sockSize = calculateSockSize(shoeSize)
+    If sockSize < 4
+        Output "Your sock size is extra small."
+    False:
+        If 4 <= sockSize And sockSize <= 6
+            Output "You sock size is small."
+        False:
+            If 7 <= sockSize And sockSize <= 9
+                Output "Your sock size is medium."
+            False:
+                If 10 <= sockSize And sockSize <= 12
+                    Output "You sock size is large."
+                False:
+                    Output "Your sock size is extra large."
+                End
+            End
+        End
+    End
+End
+
+Function calculatesockSize (Real shoeSize)
+    Declare Real sockSize
+    
+    Assign sockSize = int(shoeSize + 0.5)
+Return Real sockSize
+
+Function getShoeSize
+    Declare Real shoeSize
+    
+    Output "Enter your shoe size: "
+    Input shoeSize
+Return Real shoeSize
