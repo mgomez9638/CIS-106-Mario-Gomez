@@ -25,3 +25,7 @@ In session 5 of CIS 106, we go further into coding by learning about functions. 
 In session 6 of CIS 106, we go back to IDEs to improve on our past programs. We are starting to use functions to separate the code to make it easier to read and more accessible. There may be different ways of formatting and style of code, but it needs to be organized. Functions help us with these issues. We also get to notice some of the changes between using Flowgorithm and IDEs. I believe the main goal is to make it more accessible, therefore, help us if we want to pursue a job in coding. This will also further improve on what is expected of us in both school and at work. 
 
 ## Assignment 7
+
+In session 7 of CIS 106, we learn how to use if/else condition statements. It helps the users determine a result with their given information. This is helpful when it comes to creating multiple functions and the user has the choice to pick which function. Furthermore, creating these programs in Flowgorithm becomes a bit of a challenge because there are certain restrictions. My future goal is to find a workaround on other activities. 
+
+## Assignment 8
