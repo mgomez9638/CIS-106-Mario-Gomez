@@ -2,6 +2,7 @@
 # This program gives the user access to determine between either the US measurement system or the metric measurement system.
 # It starts with the user implementing the miles and then it branches out to the other measuring lengths. 
 
+
 def GET_CHOICE():
         choice = input("Enter U to convert US measurements or M to convert metric measurements: ")
         return choice 
@@ -13,16 +14,16 @@ def GET_DISTANCE():
         
 
 def CALCULATE_YARDS(distance):
-        yards = round(distance * 1760 + 0.5 , 2)
+        yards = round(distance * 1760 + 0.5, 2)
         return yards
 
 
-def CALCULATE_YARDS(distance):
+def CALCULATE_FEET(distance):
         feet = round(distance * 5280 + 0.5, 2)
         return feet
 
 
-def CALCUALTE_INCHES(distance):
+def CALCULATE_INCHES(distance):
         inches = round(distance * 63360 + 0.5, 2)
         return inches
 
@@ -39,7 +40,7 @@ def CALCULATE_KILOMETERS(distance):
         return kilometers
 
 
-def CALCUALTE_METERS(distance):
+def CALCULATE_METERS(distance):
         meters = round(distance * 1609.344 + 0.5, 2)
         return meters
 
@@ -69,6 +70,6 @@ else:
         kilometers = CALCULATE_KILOMETERS(distance)
         meters = CALCULATE_METERS(distance)
         centimeters = CALCULATE_CENTIMETERS(distance)
-        display_MetricMeasurements(kilometers, meters, centimeters)
+        DISPLAY_METRICMEASUREMENTS(kilometers, meters, centimeters)
     else:
         print("You must enter U to convert to US measurements or M to conver to metric measurements!")
