@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-01 11:54:30 PM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMTsxMjozMjoyMiBQTTszNzIy"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMTsxMTo1NDozMCBQTTs2OzM4Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="stableValue, multiplierValue, size, total" type="Integer" array="False" size=""/>
+            <assign variable="stableValue" expression="getStableValue()"/>
+            <assign variable="multiplierValue" expression="getMultiplierValue()"/>
+            <assign variable="size" expression="getSize()"/>
+            <while expression="stableValue &lt;= size">
+                <while expression="multiplierValue &lt;= size">
+                    <assign variable="total" expression="stableValue * multiplierValue"/>
+                    <output expression="stableValue&amp;&quot; * &quot;&amp;multiplierValue&amp;&quot; = &quot;&amp;total" newline="True"/>
+                    <assign variable="multiplierValue" expression="multiplierValue + 1"/>
+                </while>
+            </while>
+            <assign variable="stableValue" expression="stableValue + 1"/>
+        </body>
+    </function>
+    <function name="getMultiplierValue" type="Integer" variable="multiplierValue">
+        <parameters/>
+        <body>
+            <declare name="multiplierValue" type="Integer" array="False" size=""/>
+            <assign variable="multiplierValue" expression="1"/>
+            <output expression="&quot;Enter the starting point value: &quot;" newline="True"/>
+            <input variable="multiplierValue"/>
+        </body>
+    </function>
+    <function name="getSize" type="Integer" variable="size">
+        <parameters/>
+        <body>
+            <declare name="size" type="Integer" array="False" size=""/>
+            <assign variable="size" expression="1"/>
+            <output expression="&quot;Enter the size of the table(larger than the value): &quot;" newline="True"/>
+            <input variable="size"/>
+        </body>
+    </function>
+    <function name="getStableValue" type="Integer" variable="stableValue">
+        <parameters/>
+        <body>
+            <declare name="stableValue" type="Integer" array="False" size=""/>
+            <assign variable="stableValue" expression="1"/>
+            <output expression="&quot;Enter a value: &quot;" newline="True"/>
+            <input variable="stableValue"/>
+        </body>
+    </function>
+</flowgorithm>
