@@ -17,7 +17,6 @@ End
 Function getMultiplierValue
     Declare Integer multiplierValue
     
-    Assign multiplierValue = 1
     Output "Enter the starting point value: "
     Input multiplierValue
 Return Integer multiplierValue
@@ -25,7 +24,6 @@ Return Integer multiplierValue
 Function getSize
     Declare Integer size
     
-    Assign size = 1
     Output "Enter the size of the table(larger than the value): "
     Input size
 Return Integer size
@@ -33,7 +31,6 @@ Return Integer size
 Function getStableValue
     Declare Integer stableValue
     
-    Assign stableValue = 1
     Output "Enter a value: "
     Input stableValue
 Return Integer stableValue
