@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="mariogomez"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-02-01 11:54:30 PM"/>
+        <attribute name="saved" value="2020-02-02 01:49:46 AM"/>
         <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMTsxMjozMjoyMiBQTTszNzIy"/>
-        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMTsxMTo1NDozMCBQTTs2OzM4Mzc="/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMjswMTo0OTo0NiBBTTs3OzM4MzQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -29,7 +29,6 @@
         <parameters/>
         <body>
             <declare name="multiplierValue" type="Integer" array="False" size=""/>
-            <assign variable="multiplierValue" expression="1"/>
             <output expression="&quot;Enter the starting point value: &quot;" newline="True"/>
             <input variable="multiplierValue"/>
         </body>
@@ -38,7 +37,6 @@
         <parameters/>
         <body>
             <declare name="size" type="Integer" array="False" size=""/>
-            <assign variable="size" expression="1"/>
             <output expression="&quot;Enter the size of the table(larger than the value): &quot;" newline="True"/>
             <input variable="size"/>
         </body>
@@ -47,7 +45,6 @@
         <parameters/>
         <body>
             <declare name="stableValue" type="Integer" array="False" size=""/>
-            <assign variable="stableValue" expression="1"/>
             <output expression="&quot;Enter a value: &quot;" newline="True"/>
             <input variable="stableValue"/>
         </body>
