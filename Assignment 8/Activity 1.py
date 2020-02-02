@@ -1,3 +1,7 @@
+# Activity 1
+# This program gives the user access to create a multiplication table.
+# You simply begin with entering a value, entering a starting point, and the size of the table.
+
 def getMultiplierValue():
     print("Enter the starting point value: ")
     multiplierValue = int(input())
