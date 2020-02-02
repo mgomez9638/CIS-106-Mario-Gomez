@@ -1,0 +1,39 @@
+Function Main
+    Declare Integer stableValue, multiplierValue, size, total
+    
+    Assign stableValue = getStableValue()
+    Assign multiplierValue = getMultiplierValue()
+    Assign size = getSize()
+    While stableValue <= size
+        While multiplierValue <= size
+            Assign total = stableValue * multiplierValue
+            Output stableValue&" * "&multiplierValue&" = "&total
+            Assign multiplierValue = multiplierValue + 1
+        End
+    End
+    Assign stableValue = stableValue + 1
+End
+
+Function getMultiplierValue
+    Declare Integer multiplierValue
+    
+    Assign multiplierValue = 1
+    Output "Enter the starting point value: "
+    Input multiplierValue
+Return Integer multiplierValue
+
+Function getSize
+    Declare Integer size
+    
+    Assign size = 1
+    Output "Enter the size of the table(larger than the value): "
+    Input size
+Return Integer size
+
+Function getStableValue
+    Declare Integer stableValue
+    
+    Assign stableValue = 1
+    Output "Enter a value: "
+    Input stableValue
+Return Integer stableValue
