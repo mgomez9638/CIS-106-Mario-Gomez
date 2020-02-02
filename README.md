@@ -29,3 +29,7 @@ In session 6 of CIS 106, we go back to IDEs to improve on our past programs. We 
 In session 7 of CIS 106, we learn how to use if/else condition statements. It helps the users determine a result with their given information. This is helpful when it comes to creating multiple functions and the user has the choice to pick which function. Furthermore, creating these programs in Flowgorithm becomes a bit of a challenge because there are certain restrictions. My future goal is to find a workaround on other activities. 
 
 ## Assignment 8
+
+In session 8 of CIS 106, we learn about loops and how useful they are. More specifically, we focused on while loops. It requires the user to test a condition until it is met. The loop structure is different than the function structure. I am learning the proper way to code rather than just doing it to do it. I want to being involved in some way with coding in my future. 
+
+## Assignment 9
