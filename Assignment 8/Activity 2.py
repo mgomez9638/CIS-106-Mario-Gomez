@@ -6,8 +6,8 @@
 def get_scores():
     test_scores = []
     while True:
-        score = float(input("Enter a score(enter -1 to exit): "))
-        if score == -1: 
+        score = float(input("Enter a score(enter a negative integer): "))
+        if score < 0: 
             break
         test_scores.append(score)
     return test_scores
@@ -19,7 +19,7 @@ def get_total(test_scores):
 
 
 def get_average(test_scores, total):
-    average = total/len(test_scores)
+    average = round(total/len(test_scores) + .005, 2)
     return average
 
 
