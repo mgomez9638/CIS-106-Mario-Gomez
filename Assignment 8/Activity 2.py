@@ -45,4 +45,5 @@ def main():
     print("The average score is: ", average)
     print("The letter grade is: ", letter_grade)
 
+    
 main()
