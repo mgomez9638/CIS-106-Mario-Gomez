@@ -7,7 +7,8 @@ def get_scores():
     test_scores = []
     while True:
         score = float(input("Enter a score(enter -1 to exit): "))
-        if score == -1: break
+        if score == -1: 
+            break
         test_scores.append(score)
     return test_scores
 
