@@ -33,3 +33,7 @@ In session 7 of CIS 106, we learn how to use if/else condition statements. It he
 In session 8 of CIS 106, we learn about loops and how useful they are. More specifically, we focused on while loops. It requires the user to test a condition until it is met. The loop structure is different than the function structure. I am learning the proper way to code rather than just doing it to do it. I want to being involved in some way with coding in my future. 
 
 ## Assignment 9
+
+In session 9 of CIS 106, we learn about do while loops and repeat until loops. It helps the user by focusing on excuting a block before checking on the condition. I am not as familiar with do while loops as I should be but I have used them before. My go to loop was usually the for loop. I mostly implemented them into my projects until I learned about switch case. I enjoyed to create introduction descriptions, menus afterwards, and then closing descriptions when the user ended the program. Moreover, creating these programs in Flowgorithm is a bit of a head scratcher because it is different than IDEs. Every new documentation has its assets, so I will be learning as I go.
+ 
+## Assignment 10
