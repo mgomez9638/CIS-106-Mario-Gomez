@@ -4,49 +4,38 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="mariogomez"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-02-02 01:49:46 AM"/>
-        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMTsxMjozMjoyMiBQTTszNzIy"/>
-        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wMjswMTo0OTo0NiBBTTs3OzM4MzQ="/>
+        <attribute name="saved" value="2020-02-04 02:45:41 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNDswMTo0NzoyOSBBTTszNzIx"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNDswMjo0NTo0MSBBTTszOzM4MjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="stableValue, multiplierValue, size, total" type="Integer" array="False" size=""/>
-            <assign variable="stableValue" expression="getStableValue()"/>
-            <assign variable="multiplierValue" expression="getMultiplierValue()"/>
-            <assign variable="size" expression="getSize()"/>
-            <while expression="stableValue &lt;= size">
-                <while expression="multiplierValue &lt;= size">
-                    <assign variable="total" expression="stableValue * multiplierValue"/>
-                    <output expression="stableValue&amp;&quot; * &quot;&amp;multiplierValue&amp;&quot; = &quot;&amp;total" newline="True"/>
-                    <assign variable="multiplierValue" expression="multiplierValue + 1"/>
-                </while>
+            <declare name="value, expressions, multiplierValue, total" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="getValue()"/>
+            <assign variable="expressions" expression="getExpressions()"/>
+            <assign variable="multiplierValue" expression="1"/>
+            <while expression="multiplierValue &lt;= expressions">
+                <assign variable="total" expression="value * multiplierValue"/>
+                <output expression="value&amp;&quot; * &quot;&amp;multiplierValue&amp;&quot; = &quot;&amp;total" newline="True"/>
+                <assign variable="multiplierValue" expression="multiplierValue + 1"/>
             </while>
-            <assign variable="stableValue" expression="stableValue + 1"/>
         </body>
     </function>
-    <function name="getMultiplierValue" type="Integer" variable="multiplierValue">
+    <function name="getExpressions" type="Integer" variable="expressions">
         <parameters/>
         <body>
-            <declare name="multiplierValue" type="Integer" array="False" size=""/>
-            <output expression="&quot;Enter the starting point value: &quot;" newline="True"/>
-            <input variable="multiplierValue"/>
+            <declare name="expressions" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of expressions&quot;" newline="True"/>
+            <input variable="expressions"/>
         </body>
     </function>
-    <function name="getSize" type="Integer" variable="size">
+    <function name="getValue" type="Integer" variable="value">
         <parameters/>
         <body>
-            <declare name="size" type="Integer" array="False" size=""/>
-            <output expression="&quot;Enter the size of the table(larger than the value): &quot;" newline="True"/>
-            <input variable="size"/>
-        </body>
-    </function>
-    <function name="getStableValue" type="Integer" variable="stableValue">
-        <parameters/>
-        <body>
-            <declare name="stableValue" type="Integer" array="False" size=""/>
+            <declare name="value" type="Integer" array="False" size=""/>
             <output expression="&quot;Enter a value: &quot;" newline="True"/>
-            <input variable="stableValue"/>
+            <input variable="value"/>
         </body>
     </function>
 </flowgorithm>
