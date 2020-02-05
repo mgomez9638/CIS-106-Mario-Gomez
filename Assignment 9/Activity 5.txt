@@ -1,0 +1,29 @@
+Function Main
+    Declare Real shoeSize, sockSize
+    
+    While true
+        Output "Enter your shoe size(enter a negative number to exit): "
+        Input shoeSize
+        Assign sockSize = int(shoeSize + 0.5)
+        If 0 < sockSize and sockSize < 4
+            Output "Your sock size is extra small."
+        False:
+            If 4 <= sockSize and sockSize <= 6
+                Output "Your sock size is small."
+            False:
+                If 7 <= sockSize and sockSize <= 9
+                    Output "Your sock size is medium."
+                False:
+                    If 10 <= sockSize and sockSize <= 12
+                        Output "Your sock size is large."
+                    False:
+                        If 13 <= sockSize
+                            Output "Your sock size is extra large."
+                        False:
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
