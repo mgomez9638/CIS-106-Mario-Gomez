@@ -45,7 +45,7 @@
                                                         <breakpoint/>
                                                     </then>
                                                     <else>
-                                                        <output expression="&quot;Please enter a valid shoe size from 1 to 34.&quot;" newline="True"/>
+                                                        <output expression="&quot;Your sock size does not exist.&quot;" newline="True"/>
                                                     </else>
                                                 </if>
                                             </else>
