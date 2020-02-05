@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-05 02:18:40 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNTswMjowMDoyNCBBTTszNzA3"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNTswMjoxODo0MCBBTTsxOzM4MjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="shoeSize, sockSize" type="Real" array="False" size=""/>
+            <while expression="true">
+                <output expression="&quot;Enter your shoe size(enter a negative number to exit): &quot;" newline="True"/>
+                <input variable="shoeSize"/>
+                <assign variable="sockSize" expression="int(shoeSize + 0.5)"/>
+                <if expression="0 &lt; sockSize and sockSize &lt; 4">
+                    <then>
+                        <output expression="&quot;Your sock size is extra small.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="4 &lt;= sockSize and sockSize &lt;= 6">
+                            <then>
+                                <output expression="&quot;Your sock size is small.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="7 &lt;= sockSize and sockSize &lt;= 9">
+                                    <then>
+                                        <output expression="&quot;Your sock size is medium.&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="10 &lt;= sockSize and sockSize &lt;= 12">
+                                            <then>
+                                                <output expression="&quot;Your sock size is large.&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="13 &lt;= sockSize">
+                                                    <then>
+                                                        <output expression="&quot;Your sock size is extra large.&quot;" newline="True"/>
+                                                    </then>
+                                                    <else>
+                                                        <breakpoint/>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
