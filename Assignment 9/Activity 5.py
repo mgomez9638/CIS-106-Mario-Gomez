@@ -2,11 +2,22 @@
 # The user determines their sock size by their shoe size. 
 # It has a while loop included to determine their sock size and could check other sock sizes.  
 
-
-while True:
-    print("Enter your shoe size(enter a negative number to exit): ")
+                        
+def getShoeSize():
+    print("Enter your shoe size: ")
     shoeSize = float(input())
+    
+    return shoeSize
+
+def getSockSize(shoeSize):
     sockSize = int(shoeSize + 0.5)
+    
+    return sockSize
+
+# Main
+shoeSize = getShoeSize()
+sockSize = getSockSize(shoeSize)
+while True:
     if 0 < sockSize and sockSize < 4:
         print("Your sock size is extra small.")
     else:
@@ -19,6 +30,7 @@ while True:
                 if 10 <= sockSize and sockSize <= 12:
                     print("Your sock size is large.")
                 else:
-                    if 13 <= sockSize:
+                    if 13 <= sockSize and sockSize <= 34:
                         print("Your sock size is extra large.")
                     else:
+                        print("Please enter a valid shoe size from 1 to 34.")
