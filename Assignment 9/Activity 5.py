@@ -33,4 +33,4 @@ while True:
                     if 13 <= sockSize and sockSize <= 34:
                         print("Your sock size is extra large.")
                     else:
-                        print("Please enter a valid shoe size from 1 to 34.")
+                        print("Your sock size does not exist.")
