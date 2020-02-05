@@ -37,3 +37,7 @@ In session 8 of CIS 106, we learn about loops and how useful they are. More spec
 In session 9 of CIS 106, we learn about do while loops and repeat until loops. It helps the user by focusing on excuting a block before checking on the condition. I am not as familiar with do while loops as I should be but I have used them before. My go to loop was usually the for loop. I mostly implemented them into my projects until I learned about switch case. I enjoyed to create introduction descriptions, menus afterwards, and then closing descriptions when the user ended the program. Moreover, creating these programs in Flowgorithm is a bit of a head scratcher because it is different than IDEs. Every new documentation has its assets, so I will be learning as I go.
  
 ## Assignment 10
+
+In session 10 of CIS 106, we go further into loops expanding into for loops and nested loops. We can see the advantages and disadvantages of each loop now in our programs. There are opportunities to use nested loops when you want to give the user more access. It contains a bit more work, but its intended for the outer loop to repeat them action if needed. When looking at programs, I kept thinking about for loops and how helpful they would be in these programs. Now, I am learning how to use them in python. Most programming professions work with python, so it is an asset to learn this language.
+
+## Assignment 11
