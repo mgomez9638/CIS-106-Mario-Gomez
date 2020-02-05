@@ -4,44 +4,48 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="mariogomez"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2020-02-05 02:18:40 AM"/>
+        <attribute name="saved" value="2020-02-05 10:53:54 AM"/>
         <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNTswMjowMDoyNCBBTTszNzA3"/>
-        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNTswMjoxODo0MCBBTTsxOzM4MjI="/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNTsxMDo1Mzo1NCBBTTszOzM4Mjc="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
             <declare name="shoeSize, sockSize" type="Real" array="False" size=""/>
+            <assign variable="shoeSize" expression="getShoeSize()"/>
+            <assign variable="sockSize" expression="getSockSize(shoeSize)"/>
             <while expression="true">
-                <output expression="&quot;Enter your shoe size(enter a negative number to exit): &quot;" newline="True"/>
-                <input variable="shoeSize"/>
-                <assign variable="sockSize" expression="int(shoeSize + 0.5)"/>
                 <if expression="0 &lt; sockSize and sockSize &lt; 4">
                     <then>
                         <output expression="&quot;Your sock size is extra small.&quot;" newline="True"/>
+                        <breakpoint/>
                     </then>
                     <else>
                         <if expression="4 &lt;= sockSize and sockSize &lt;= 6">
                             <then>
                                 <output expression="&quot;Your sock size is small.&quot;" newline="True"/>
+                                <breakpoint/>
                             </then>
                             <else>
                                 <if expression="7 &lt;= sockSize and sockSize &lt;= 9">
                                     <then>
                                         <output expression="&quot;Your sock size is medium.&quot;" newline="True"/>
+                                        <breakpoint/>
                                     </then>
                                     <else>
                                         <if expression="10 &lt;= sockSize and sockSize &lt;= 12">
                                             <then>
                                                 <output expression="&quot;Your sock size is large.&quot;" newline="True"/>
+                                                <breakpoint/>
                                             </then>
                                             <else>
-                                                <if expression="13 &lt;= sockSize">
+                                                <if expression="13 &lt;= sockSize and sockSize &lt;= 34">
                                                     <then>
                                                         <output expression="&quot;Your sock size is extra large.&quot;" newline="True"/>
+                                                        <breakpoint/>
                                                     </then>
                                                     <else>
-                                                        <breakpoint/>
+                                                        <output expression="&quot;Please enter a valid shoe size from 1 to 34.&quot;" newline="True"/>
                                                     </else>
                                                 </if>
                                             </else>
@@ -53,6 +57,23 @@
                     </else>
                 </if>
             </while>
+        </body>
+    </function>
+    <function name="getShoeSize" type="Real" variable="shoeSize">
+        <parameters/>
+        <body>
+            <declare name="shoeSize" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your shoe size: &quot;" newline="True"/>
+            <input variable="shoeSize"/>
+        </body>
+    </function>
+    <function name="getSockSize" type="Integer" variable="sockSize">
+        <parameters>
+            <parameter name="shoeSize" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="sockSize" type="Integer" array="False" size=""/>
+            <assign variable="sockSize" expression="int(shoeSize + 0.5)"/>
         </body>
     </function>
 </flowgorithm>
