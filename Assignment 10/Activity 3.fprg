@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-06 02:27:16 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNjswMTo0MjozNiBBTTszNzE2"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNjswMjoyNzoxNiBBTTsxOzM4MjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hours, rate, weekly, annually, monthly" type="Real" array="False" size=""/>
+            <declare name="pay, goAgain" type="Boolean" array="False" size=""/>
+            <declare name="anotherGo" type="String" array="False" size=""/>
+            <assign variable="pay" expression="true"/>
+            <while expression="pay == true">
+                <assign variable="hours" expression="getHours()"/>
+                <assign variable="rate" expression="getRate()"/>
+                <assign variable="weekly" expression="rate * hours"/>
+                <assign variable="annually" expression="52 * weekly"/>
+                <assign variable="monthly" expression="annually / 12"/>
+                <output expression="&quot;This pay is before taxes. Your weekly earnings are $&quot;&amp;weekly&amp;&quot;. Your monthly earnings are $&quot;&amp;monthly&amp;&quot;. Your annually earnings are $&quot;&amp;annually&amp;&quot;.&quot;" newline="True"/>
+                <assign variable="goAgain" expression="true"/>
+                <while expression="goAgain == true">
+                    <assign variable="anotherGo" expression="getAnotherGo()"/>
+                    <if expression="anotherGo == &quot;yes&quot; and anotherGo == &quot;Yes&quot; and anotherGo == &quot;y&quot; and anotherGo == &quot;Y&quot;">
+                        <then>
+                            <assign variable="goAgain" expression="true"/>
+                        </then>
+                        <else>
+                            <assign variable="goAgain" expression="false"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </while>
+            </while>
+        </body>
+    </function>
+    <function name="getAnotherGo" type="String" variable="anotherGo">
+        <parameters/>
+        <body>
+            <declare name="anotherGo" type="String" array="False" size=""/>
+            <output expression="&quot;Would you like to go again? &quot;" newline="True"/>
+            <input variable="anotherGo"/>
+        </body>
+    </function>
+    <function name="getHours" type="Real" variable="hours">
+        <parameters/>
+        <body>
+            <declare name="hours" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter hours worked: &quot;" newline="True"/>
+            <input variable="hours"/>
+        </body>
+    </function>
+    <function name="getRate" type="Real" variable="rate">
+        <parameters/>
+        <body>
+            <declare name="rate" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter hourly rate of pay: &quot;" newline="True"/>
+            <input variable="rate"/>
+        </body>
+    </function>
+</flowgorithm>
