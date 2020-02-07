@@ -13,9 +13,7 @@ def get_size():
     return size 
 
 
-def main():
-    size = get_size()
-    start = get_start()
+def display_chart(start, size):
     print()
     column_string = " "
     for column in range(start, size + 1):
@@ -28,6 +26,12 @@ def main():
             if (row * column) % 2 == 0:
                 row_string = row_string + " "
         print(row_string)
+
+
+def main():
+    size = get_size()
+    start = get_start()
+    display_chart(start, size)
 
 
 main()
