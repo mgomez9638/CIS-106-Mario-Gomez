@@ -1,0 +1,26 @@
+Function Main
+    Declare Integer value, expressions, multiplierValue, total
+    
+    Assign value = getValue()
+    Assign expressions = getExpressions()
+    Assign multiplierValue = 1
+    For multiplierValue = 1 to expressions
+        Assign total = value * multiplierValue
+        Output value&" * "&multiplierValue&" = "&total
+        Assign multiplierValue = multiplierValue + 1
+    End
+End
+
+Function getExpressions
+    Declare Integer expressions
+    
+    Output "Enter the number of expressions: "
+    Input expressions
+Return Integer expressions
+
+Function getValue
+    Declare Integer value
+    
+    Output "Enter a value: "
+    Input value
+Return Integer value
