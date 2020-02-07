@@ -1,7 +1,6 @@
-# Activity 1 from Assignment 3 
-# This program gives the user access to figure out how much they make weekly, monthly, and annually.
-# The user has the option to run the amount of money they would be making with different hourly rates.
-
+# Activity 1 from For Loops
+# This program gives the user access to create a multiplication table.
+# You simply begin with entering a value, entering a starting point, and the size of the table.
            
 def getExpressions():
     print("Enter the number of expressions: ")
