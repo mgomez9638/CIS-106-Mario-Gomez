@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="mariogomez"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-02-07 05:44:35 AM"/>
+        <attribute name="created" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNzswNTozNToxMyBBTTszNzE4"/>
+        <attribute name="edited" value="bWFyaW9nb21lejtNYXJpb3MtTWFjQm9vay07MjAyMC0wMi0wNzswNTo0NDozNSBBTTsxOzM4MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="value, expressions, multiplierValue, total" type="Integer" array="False" size=""/>
+            <assign variable="value" expression="getValue()"/>
+            <assign variable="expressions" expression="getExpressions()"/>
+            <assign variable="multiplierValue" expression="1"/>
+            <for variable="multiplierValue" start="1" end="expressions" direction="inc" step="1">
+                <assign variable="total" expression="value * multiplierValue"/>
+                <output expression="value&amp;&quot; * &quot;&amp;multiplierValue&amp;&quot; = &quot;&amp;total" newline="True"/>
+                <assign variable="multiplierValue" expression="multiplierValue + 1"/>
+            </for>
+        </body>
+    </function>
+    <function name="getExpressions" type="Integer" variable="expressions">
+        <parameters/>
+        <body>
+            <declare name="expressions" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of expressions: &quot;" newline="True"/>
+            <input variable="expressions"/>
+        </body>
+    </function>
+    <function name="getValue" type="Integer" variable="value">
+        <parameters/>
+        <body>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a value: &quot;" newline="True"/>
+            <input variable="value"/>
+        </body>
+    </function>
+</flowgorithm>
