@@ -42,6 +42,6 @@ In session 10 of CIS 106, we go further into loops expanding into for loops and 
 
 ## Assignment 11
 
-In session 11 of CIS 106, we begin to learn about arrays. When I think of arrays, I also think about vectors. Vectors are dynamic compared to arrays being fixed. In Python, there are no vectors, but there exists arrays, lists, and tuples. I did not know they had there own category in Python. This function will help when grouping different elements. I could create a list of fruit and display it. It makes displaying the same datatype easier. I would imagine from here on out we would be using arrays or lists in some future programs. 
+In session 11 of CIS 106, we begin to learn about arrays. When I think of arrays, I also think about vectors. Vectors are dynamic compared to arrays being fixed. In Python, there are no vectors, but there exists arrays, lists, and tuples. I did not know they had there own category in Python. This function will help when grouping different elements. I could create a list of fruit and display it. It makes displaying the same datatype easier. I would imagine from here on out we would be using arrays in some future programs. 
 
 ## Assignment 12
