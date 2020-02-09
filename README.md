@@ -41,3 +41,7 @@ In session 9 of CIS 106, we learn about do while loops and repeat until loops. I
 In session 10 of CIS 106, we go further into loops expanding into for loops and nested loops. We can see the advantages and disadvantages of each loop now in our programs. There are opportunities to use nested loops when you want to give the user more access. It contains a bit more work, but its intended for the outer loop to repeat them action if needed. When looking at programs, I kept thinking about for loops and how helpful they would be in these programs. Now, I am learning how to use them in python. Most programming professions work with python, so it is an asset to learn this language.
 
 ## Assignment 11
+
+In session 11 of CIS 106, we begin to learn about arrays. When I think of arrays, I also think about vectors. Vectors are dynamic compared to arrays being fixed. In Python, there are no vectors, but there exists arrays, lists, and tuples. I did not know they had there own category in Python. This function will help when grouping different elements. I could create a list of fruit and display it. It makes displaying the same datatype easier. I would imagine from here on out we would be using arrays or lists in some future programs. 
+
+## Assignment 12
