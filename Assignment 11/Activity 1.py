@@ -36,7 +36,7 @@ def get_average(test_scores, total):
     return average
 
 
-def display_result(total, test_scores, average):
+def display_result(total, test_scores, maximum, minimum, average):
     print("The total points entered are: ", total)
     print("The highest score is: ", maximum)
     print("The lowest score is: ", minimum)
@@ -47,8 +47,10 @@ def main():
     size = get_size()
     test_scores = get_scores(size)
     total = get_total(test_scores)
+    maximum = get_maximum(test_scores)
+    minimum = get_minimum(test_scores)
     average = get_average(test_scores, total)
-    display_result(total, test_scores, average)
+    display_result(total, test_scores, maximum, minimum, average)
 
 
 main()
