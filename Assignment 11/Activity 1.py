@@ -30,6 +30,7 @@ def get_minimum(test_scores):
     minimum = min(test_scores)
     return minimum
 
+
 def get_average(test_scores, total):
     average = round(total/len(test_scores), 2)
     return average
