@@ -34,7 +34,7 @@ In session 8 of CIS 106, we learn about loops and how useful they are. More spec
 
 ## Assignment 9
 
-In session 9 of CIS 106, we learn about do while loops and repeat until loops. It helps the user by focusing on excuting a block before checking on the condition. I am not as familiar with do while loops as I should be but I have used them before. My go to loop was usually the for loop. I mostly implemented them into my projects until I learned about switch case. I enjoyed to create introduction descriptions, menus afterwards, and then closing descriptions when the user ended the program. Moreover, creating these programs in Flowgorithm is a bit of a head scratcher because it is different than IDEs. Every new documentation has its assets, so I will be learning as I go.
+In session 9 of CIS 106, we learn about do while loops and repeat until loops. It helps the user by focusing on executing a block before checking on the condition. I am not as familiar with do while loops as I should be but I have used them before. My go to loop was usually the for loop. I mostly implemented them into my projects until I learned about switch case. I enjoyed to create introduction descriptions, menus afterwards, and then closing descriptions when the user ended the program. Moreover, creating these programs in Flowgorithm is a bit of a head scratcher because it is different than IDEs. Every new documentation has its assets, so I will be learning as I go.
  
 ## Assignment 10
 
