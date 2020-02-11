@@ -41,12 +41,17 @@ def calculate_zeller_congruence(month, day, year):
     j = year // 100
     weekday = q + 13 * (m + 1) // 5 + k + k // 4 + j // 4 + 5 * j
     weekday = weekday % 7
-    print(day_of_the_week(weekday))
+    return (day_of_the_week(weekday))
+
+
+def display_result(weekday):
+    print(weekday)
 
 
 def main():
     month, day, year = get_birthday()
-    calculate_zeller_congruence(month, day, year)
+    weekday = calculate_zeller_congruence(month, day, year)
+    display_result(weekday)
 
 
 main()
