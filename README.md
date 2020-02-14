@@ -49,3 +49,11 @@ In session 11 of CIS 106, we begin to learn about arrays. When I think of arrays
 In session 12 of CIS 106, we split into dynamic arrays. I did not acknowledge that there were more than one type of array. Each one has its own functions. These are implemented into many programs when creating notes. This will help me out in future programs when implementing elements of the same type. 
 
 ## Assignment 13
+
+In session 13 of CIS 106, we begin to talk about strings. Strings have plenty of functions, so they can be used in different ways. When I learned Swift or C++, strings were one of the first things thought. We have already used strings in other projects, so it should be familiar. Every program consists of a string. This will help in every program I create because its the most popular and efficient way of coding. 
+
+## Assignment 14
+
+
+
+## Assignment 15
