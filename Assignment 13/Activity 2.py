@@ -4,8 +4,7 @@
 
 
 def get_string():
-    string = input("Write a sentence: \n")
-    string = string.split(" ")
+    string = input("Write a sentence: \n").split(" ")
     while "" in string:
         string.remove("")
     string = " ".join(string)
