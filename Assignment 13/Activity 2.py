@@ -12,19 +12,13 @@ def get_string():
     return string
 
 
-def get_reverse(string):
-    reverse = "".join(reversed(string))
-    return reverse
-
-
-def display_result(reverse):
-    print(reverse)
+def display_result(string):
+    print(string[::-1])
 
 
 def main():
     string = get_string()
-    reverse = get_reverse(string)
-    display_result(reverse)
+    display_result(string)
 
 
 main()
