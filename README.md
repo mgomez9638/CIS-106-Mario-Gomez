@@ -54,6 +54,6 @@ In session 13 of CIS 106, we begin to talk about strings. Strings have plenty of
 
 ## Assignment 14
 
-
+In session 14 of CIS 106, we begin to look into files. Many programs run off of files because they are able to read and/or put in data. Throughout my years practicing programs, I have been unsuccessful with files. They have given me to the most trouble. This unit has given me a better overview of reading, writing and creating files. There are still questions I have on how to attempt these files. Either way this will help in future file-friendly programs. 
 
 ## Assignment 15
