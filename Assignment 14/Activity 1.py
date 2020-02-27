@@ -1,5 +1,6 @@
 # Activity 1
 # This program implements a text file to be able to read information.
+# The name of the text file is scores.txt
 # It displays all the scores from the file.
 # The program intents to display the high score, low score, and average score.
 
