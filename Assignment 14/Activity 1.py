@@ -8,12 +8,13 @@ import os
 
 
 def file_exist():
-    my_file = "scores.txt"
+    my_file = input("Enter the text file with the extension: ")
     if os.path.isfile(my_file):
         print("Processing....", "\n")
         print("File does exist!", "\n")
     else:
         print("File does not exist!", "\n")
+    return my_file
 
 
 def get_file(my_file):
@@ -69,7 +70,7 @@ def display_result(high, low, average):
 # main function
 def main():
     print("\t\tWelcome to Programming with Files!\n\n")
-    file_exist()
+    my_file = file_exist()
     names, scores = get_file(my_file)
     scores = get_scores(scores)
     high = get_high(scores)
