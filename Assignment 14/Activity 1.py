@@ -1,6 +1,5 @@
 # Activity 1
 # This program implements a text file to be able to read information.
-# The name of the text file is scores.txt
 # It displays all the scores from the file.
 # The program intents to display the high score, low score, and average score.
 
@@ -8,29 +7,29 @@
 import os
 
 
+# check if text file exists
 def file_exist():
     my_file = input("Enter the text file with the extension: ")
     if os.path.isfile(my_file):
-        print("Processing....", "\n")
+        print("\n","Processing....", "\n")
         print("File does exist!", "\n")
     else:
-        print("File does not exist!", "\n")
+        print("\n", "File does not exist!", "\n")
     return my_file
 
 
+# read the text file
 def get_file(my_file):
-    names = []
     scores = []
-    my_file = open("scores.txt", "r")
-    my_file.readline()
-    for line in my_file:
-        text = line.split(",")
-        names.append(text[0])
-        scores.append(float(text[1]))
-    my_file.close()
-    return names, scores
+    with open(my_file, "r") as txt_file: 
+        txt_file.readline()
+        for line in txt_file:
+            text = line.split(",")
+            scores.append(float(text[1]))
+    return scores
 
 
+# user can enter more scores
 def get_scores(scores):
     while True:
         try:
@@ -72,7 +71,7 @@ def display_result(high, low, average):
 def main():
     print("\t\tWelcome to Programming with Files!\n\n")
     my_file = file_exist()
-    names, scores = get_file(my_file)
+    scores = get_file(my_file)
     scores = get_scores(scores)
     high = get_high(scores)
     low = get_low(scores)
