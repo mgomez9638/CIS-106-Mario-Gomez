@@ -5,48 +5,43 @@
 # This program includes error handling.
 
 
-import os, sys
+import os
+import sys
 
 
 # check if text file exists
 def file_exist():
     try:
-        my_file = input("Enter the text file with the extension: ")
+        my_file = "scores.txt"
         if os.path.isfile(my_file):
-            print("\n","Processing....", "\n")
-            print("File does exist!", "\n")
+            print("Processing....\n")
+            print("File does exist!\n")
             return my_file
-        else:
-            print("\n", "File does not exist!", "\n")
     except FileNotFoundError:
-        print("File cannot be found")
+        print("File is missing", my_file)
+        print(sys.exc_info()[1])
 
 
 # read the text file
 def get_file(my_file):
     try:
         scores = []
-        with open(my_file, "r") as txt_file: 
-            txt_file.readline()
-            for line in txt_file:
+        my_file = open("scores.txt", "r")
+        my_file.readline()
+        for line in my_file:
+            try:
                 text = line.split(",")
                 scores.append(float(text[1]))
+            except ValueError:
+                print("Incorrect data", my_file)
+                print(sys.exc_info()[1])
+        my_file.close()
         return scores
     except Exception:
         print("Error reading the format", my_file)
         print(sys.exc_info()[1])
-
-
-# user can enter more scores
-def get_scores(scores):
-    while True:
-        try:
-            more_scores = float(input("Enter a score(press enter to exit): "))
-        except ValueError:
-            break
-        scores.append(more_scores)
-    print(scores)
-    return scores
+    if not my_file:
+        print("File is empty!")
 
 
 # high score
@@ -80,7 +75,6 @@ def main():
     print("\t\tWelcome to Programming with Files!\n\n")
     my_file = file_exist()
     scores = get_file(my_file)
-    scores = get_scores(scores)
     high = get_high(scores)
     low = get_low(scores)
     average = get_average(scores)
@@ -89,4 +83,3 @@ def main():
 
 
 main()
-
