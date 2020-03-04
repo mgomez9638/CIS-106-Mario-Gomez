@@ -7,37 +7,21 @@
 import os
 
 
-# check if text file exists
 def file_exist():
-    my_file = input("Enter the text file with the extension: ")
+    my_file = "scores.txt"
     if os.path.isfile(my_file):
-        print("\n","Processing....", "\n")
+        print("Processing....", "\n")
         print("File does exist!", "\n")
-    else:
-        print("\n", "File does not exist!", "\n")
-    return my_file
 
 
-# read the text file
 def get_file(my_file):
     scores = []
-    with open(my_file, "r") as txt_file: 
-        txt_file.readline()
-        for line in txt_file:
-            text = line.split(",")
-            scores.append(float(text[1]))
-    return scores
-
-
-# user can enter more scores
-def get_scores(scores):
-    while True:
-        try:
-            more_scores = float(input("Enter a score(press enter to exit): "))
-        except ValueError:
-            break
-        scores.append(more_scores)
-    print(scores)
+    my_file = open("scores.txt", "r")
+    my_file.readline()
+    for line in my_file:
+        text = line.split(",")
+        scores.append(float(text[1]))
+    my_file.close()
     return scores
 
 
@@ -62,17 +46,16 @@ def get_average(scores):
 
 # displays scores
 def display_result(high, low, average):
-    print("The highest score is: ", high)
     print("The lowest score is: ", low)
+    print("The highest score is: ", high)
     print("The average score is: ", average)
 
 
 # main function
 def main():
     print("\t\tWelcome to Programming with Files!\n\n")
-    my_file = file_exist()
+    file_exist()
     scores = get_file(my_file)
-    scores = get_scores(scores)
     high = get_high(scores)
     low = get_low(scores)
     average = get_average(scores)
