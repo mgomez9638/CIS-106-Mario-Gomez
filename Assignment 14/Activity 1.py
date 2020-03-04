@@ -10,8 +10,8 @@ import os
 def file_exist():
     my_file = "scores.txt"
     if os.path.isfile(my_file):
-        print("Processing....", "\n")
-        print("File does exist!", "\n")
+        print("Processing....\n")
+        print("File does exist!\n")
 
 
 def get_file(my_file):
