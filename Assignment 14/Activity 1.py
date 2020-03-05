@@ -10,11 +10,11 @@ import os
 def file_exist():
     my_file = "scores.txt"
     if os.path.isfile(my_file):
-        print("Processing....\n")
-        print("File does exist!\n")
+        print("Processing....", "\n")
+        print("File does exist!", "\n")
 
 
-def get_file(my_file):
+def get_file():
     scores = []
     my_file = open("scores.txt", "r")
     my_file.readline()
@@ -55,7 +55,7 @@ def display_result(high, low, average):
 def main():
     print("\t\tWelcome to Programming with Files!\n\n")
     file_exist()
-    scores = get_file(my_file)
+    scores = get_file()
     high = get_high(scores)
     low = get_low(scores)
     average = get_average(scores)
