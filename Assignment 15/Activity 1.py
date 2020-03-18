@@ -10,15 +10,8 @@ import sys
 
 
 def get_choice():
-    try:
-        choice = input("Please enter one of the following abbreviations: T for triangle, S for square, R for rectangle, P for parallelogram, TR for trapezoid or C for circle: ")
-        return choice
-    except NameError:
-        print("You must enter T for triangle, S for square, R for rectangle, P for parallelogram, TR for trapezoid or C for circle!")
-        print(sys.exc_info()[1])
-    except Exception:
-        print("You must enter a valid abbreviation!")
-        print(sys.exc_info()[1])
+    choice = input("Please enter one of the following abbreviations: T for triangle, S for square, R for rectangle, P for parallelogram, TR for trapezoid or C for circle: ")
+    return choice
 
 
 def shape_triangle():
@@ -118,8 +111,6 @@ def shape_circle():
 
 
 class shape_area():
-
-
     def __init__(self, base, vertical_height, length_of_sides, width, radius):
         self.base = base
         self.vertical_height = vertical_height
@@ -158,29 +149,29 @@ def main():
     if (choice == "T" or choice == "t"):
         base, vertical_height, length_of_sides, width, radius = shape_triangle()
         shape = shape_area(base, vertical_height, length_of_sides, width, radius)
-        print("Area of triangle: ", round(shape.area_triangle(), 2))
+        print("The area of a triangle is ", round(shape.area_triangle(), 2))
     elif (choice == "S" or choice == "s"):
         base, vertical_height, length_of_sides, width, radius = shape_square()
         shape = shape_area(base, vertical_height, length_of_sides, width, radius)
-        print("Area of square: ", round(shape.area_square(), 2))
+        print("The area of a square is ", round(shape.area_square(), 2))
     elif (choice == "R" or choice == "r"):
         base, vertical_height, length_of_sides, width, radius = shape_rectangle()
         shape = shape_area(base, vertical_height, length_of_sides, width, radius)
-        print("Area of rectangle: ", round(shape.area_rectangle(), 2))
+        print("The area of a rectangle is ", round(shape.area_rectangle(), 2))
     elif (choice == "P" or choice == "p"):
         base, vertical_height, length_of_sides, width, radius = shape_parallelogram()
         shape = shape_area(base, vertical_height, length_of_sides, width, radius)
-        print("Area of parallelogram: ", round(shape.area_parallelogram(), 2))
+        print("The area of a parallelogram is ", round(shape.area_parallelogram(), 2))
     elif (choice == "Tr" or choice == "tr"):
         base, vertical_height, length_of_sides, width, radius = shape_trapezoid()
         shape = shape_area(base, vertical_height, length_of_sides, width, radius)
-        print("Area of trapezoid: ", round(shape.area_trapezoid(), 2))
+        print("The area of a trapezoid is ", round(shape.area_trapezoid(), 2))
     elif (choice == "C" or choice == "c"):
         base, vertical_height, length_of_sides, width, radius = shape_circle()
         shape = shape_area(base, vertical_height, length_of_sides, width, radius)
-        print("Area of circle: ", round(shape.area_circle(), 2))
+        print("The area of a circle is ", round(shape.area_circle(), 2))
     else:
-        print("You must enter T for triangle, S for square, R for rectangle, P for parallelogram, TR for trapezoid or C for circle!")
+        raise Exception("You must enter T for triangle, S for square, R for rectangle, P for parallelogram, TR for trapezoid or C for circle!", sys.exc_info()[1])
     print("\n\n\t\tThank you for using the Shape Area Program!")
 
 
