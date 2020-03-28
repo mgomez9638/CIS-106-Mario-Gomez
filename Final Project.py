@@ -111,13 +111,13 @@ def display_result(xml_file, title, artist, country, price, year, avg_price):
 
 
 def main():
-    print("\t\tWelcome to Programming with XML Files using Element Tree!\n\n")
+    print("\t\tWelcome to the CD Catalog!\n\n")
     xml_file = find_xml()
     title, artist, country, price, year = get_xml_info(xml_file)
     total = get_total(xml_file, price)
     avg_price = get_avg_price(xml_file, total, price)
     display_result(xml_file, title, artist, country, price, year, avg_price)
-    print("\n\n\t\tThank You for Programming with XML Files using Element Tree!\n\n")
+    print("\n\n\t\tThank You for using the CD Catalog!\n\n")
 
 
 main()
