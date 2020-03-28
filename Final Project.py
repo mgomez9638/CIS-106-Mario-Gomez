@@ -27,7 +27,7 @@ def find_xml():
     except urllib.error.URLError:
         print("URL information is incorrect!")
         print(sys.exc_info()[1])
- 
+
 
 def get_xml_info(xml_file):
     title = []
@@ -62,7 +62,7 @@ def get_xml_info(xml_file):
     except ValueError:
         print("Missing data", xml_file)
         print(sys.exc_info()[1])
- 
+
 
 def get_total(xml_file, price):
     try:
@@ -108,7 +108,8 @@ def display_result(xml_file, title, artist, country, price, year, avg_price):
     except ValueError:
         print("Missing data", xml_file)
         print(sys.exc_info()[1])
-        
+
+
 def main():
     print("\t\tWelcome to Programming with XML Files using Element Tree!\n\n")
     xml_file = find_xml()
