@@ -4,13 +4,17 @@
 #
 # References:
 #     https://docs.python.org/3/py-modindex.html
+#     https://docs.python.org/3/library/urllib.html#module-urllib
 #     https://docs.python.org/3/library/xml.etree.elementtree.html#module-xml.etree.ElementTree
+#     https://realpython.com/python-itertools/
+#     https://realpython.com/python-zip-function/
 
 
 import sys
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree
+import itertools
 
 
 def find_xml():
@@ -86,3 +90,17 @@ def get_avg_price(xml_file, total, price):
     except TypeError:
         print("Wrong type", xml_file)
         print(sys.exc_info()[1])
+
+
+def main():
+    print("\t\tWelcome to Programming with XML Files using Element Tree!\n\n")
+    xml_file = find_xml()
+    title, artist, country, price, year = get_xml_info(xml_file)
+    total = get_total(price)
+    avg_price = get_avg_price(total, price)
+    print(title, "-", artist, "-", country, "-", price, "-", year, "\n")
+    print(len(title), "items - $", avg_price, "average price")
+    print("\n\n\t\tThank You for Programming with XML Files using Element Tree!\n\n")
+
+
+main()
