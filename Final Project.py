@@ -1,6 +1,6 @@
 # Final Project
 # This program reads data from a url using Internet processing methods and builds arrays for each indentation using XML functions.
-# Afterwards, it displays the catalog items, the amount of items, and the average price of the items.
+# Afterwards, it displays the catalog items information, the amount of items, and the average price of the items.
 #
 # References:
 #     https://docs.python.org/3/py-modindex.html
@@ -14,7 +14,6 @@ import sys
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree
-import itertools
 
 
 def find_xml():
@@ -25,7 +24,7 @@ def find_xml():
     except urllib.error.HTTPError:
         print("URL is incorrect!")
         print(sys.exc_info()[1])
-    except urrlib.error.URLError:
+    except urllib.error.URLError:
         print("URL information is incorrect!")
         print(sys.exc_info()[1])
  
@@ -92,14 +91,31 @@ def get_avg_price(xml_file, total, price):
         print(sys.exc_info()[1])
 
 
+def display_result(xml_file, title, artist, country, price, year, avg_price):
+    try:
+        print("Catalog items information for CDs in the system:\n\n")
+        print("Title - Artist - Country - Price - Year\n")
+        for titles, artists, countries, prices, years in zip(title, artist, country, price, year):
+            print(titles, "-", artists, "-", countries, "-", prices, "-", years, "\n")
+        print("\nThe amount of catalog items and the average price of each one:\n")
+        print(len(title), "item(s) - $", avg_price, "average price")
+    except AttributeError:
+        print("Wrong Type", xml_file)
+        print(sys.exc_info()[1])
+    except IndexError:
+        print("Incorrectly formatted", xml_file)
+        print(sys.exc_info()[1])
+    except ValueError:
+        print("Missing data", xml_file)
+        print(sys.exc_info()[1])
+        
 def main():
     print("\t\tWelcome to Programming with XML Files using Element Tree!\n\n")
     xml_file = find_xml()
     title, artist, country, price, year = get_xml_info(xml_file)
     total = get_total(xml_file, price)
     avg_price = get_avg_price(xml_file, total, price)
-    print(title, "-", artist, "-", country, "-", price, "-", year, "\n")
-    print(len(title), "items - $", avg_price, "average price")
+    display_result(xml_file, title, artist, country, price, year, avg_price)
     print("\n\n\t\tThank You for Programming with XML Files using Element Tree!\n\n")
 
 
