@@ -60,3 +60,29 @@ def get_xml_info(xml_file):
         print("Missing data", xml_file)
         print(sys.exc_info()[1])
  
+
+def get_total(xml_file, price):
+    try:
+        total = sum(price)
+        return total
+    except ValueError:
+        print("Missing data", xml_file)
+        print(sys.exc_info()[1])
+    except TypeError:
+        print("Wrong type", xml_file)
+        print(sys.exc_info()[1])
+
+
+def get_avg_price(xml_file, total, price):
+    try:
+        avg_price = round(total/len(price), 2)
+        return avg_price
+    except ZeroDivisionError:
+        print("Missing values", xml_file)
+        print(sys.exc_info()[1])
+    except ValueError:
+        print("Missing data", xml_file)
+        print(sys.exc_info()[1])
+    except TypeError:
+        print("Wrong type", xml_file)
+        print(sys.exc_info()[1])
